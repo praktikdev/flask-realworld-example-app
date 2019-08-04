@@ -9,7 +9,7 @@ class TestArticleViews:
         user = user.get()
         resp = testapp.post_json(url_for('user.login_user'), {'user': {
             'email': user.email,
-            'password': 'myprecious'
+            'password': 'myprecious_'
         }})
 
         token = str(resp.json['user']['token'])
