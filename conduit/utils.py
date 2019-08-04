@@ -3,6 +3,7 @@
 from conduit.user.models import User  # noqa
 
 ### some comment
+### and one more
 
 def jwt_identity(payload):
     return User.get_by_id(payload)
